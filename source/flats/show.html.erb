@@ -1,0 +1,43 @@
+<!-- Dynamic flat page -->
+<% flat = data.flats[owner] %>
+
+<div class="content text-center"  style="margin-bottom: 100px">
+
+  <%= image_tag flat.picture, height: "200px", width: "100%" %>
+
+  <h1><%= flat.owner_name %></h1>
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="row">
+          <div class="col-xs-6 text-right">
+            <%= image_tag flat.owner_picture, class: "avatar-large" %>
+            <!-- <p><%= flat.owner_name.capitalize %></p> -->
+          </div>
+          <div class="col-xs-6">
+            <ul class="list-unstyled text-left">
+              <li><%= flat.summary %></li>
+              <li><%= flat.city %></li>
+              <li><%= flat.price_night %></li>
+            </ul>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="row">
+          <h2>Book that flat</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <a href="mail:contact@airbnb.com"><h3><i class="fa fa-envelope large" aria-hidden="true"></i> contact@airbnb.com</h3></a>
+</div>
